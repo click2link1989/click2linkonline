@@ -1,0 +1,51 @@
+.margin-top-2 {
+    margin-top: 2%;
+}
+.margin-bottom-2 {
+    margin-bottom: 2%;
+}
+
+.desc-props {
+    white-space: normal !important;
+    margin-top: 1%;
+}
+
+.example-card {
+    max-width: 250px;
+  }
+  
+
+
+//   ---------------------
+
+.main-class {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.mat-class-card {
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1%;
+}
+
+.title-props {
+    height: 50px;
+}
+
+.card-content-props {
+    height: 270px;
+    word-break: break-all;
+}
+
+.mat-card-actions-props {
+    word-break: break-all;
+    padding: 1%;
+}
+
+.img-props {
+    width: 250px;
+    height: 130px;
+}

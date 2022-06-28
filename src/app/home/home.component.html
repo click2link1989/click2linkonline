@@ -1,0 +1,31 @@
+<div class="container margin-top-2">
+  <!-- <mat-list>
+        <div mat-subheader>Referral Links</div>
+        <mat-list-item *ngFor="let item of referralData" class="margin-top-2">
+            <mat-icon mat-list-icon>mobile_screen_share</mat-icon>
+            <div mat-line>{{item.heading}}</div>
+            <div mat-line> <a href="{{item.link}}" target="_blank">{{item.link}}</a> </div>
+            <div mat-line *ngIf="item.desc" class="desc-props margin-bottom-2" [innerHTML]="item.desc">}</div>
+            <mat-divider mat-line></mat-divider>
+        </mat-list-item>
+    </mat-list> -->
+
+  <div class="main-class">
+    <mat-card class="example-card mat-class-card" *ngFor="let item of referralData">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class="title-props">{{item.heading}}</mat-card-title>
+        <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+      </mat-card-header>
+      <img mat-card-image src="../../assets/{{item.image}}" class="img-props" alt="Photo of a Shiba Inu">
+      <mat-card-content class="card-content-props">
+        <p [innerHTML]="item.desc">
+        </p>
+      </mat-card-content>
+      <mat-card-actions class="mat-card-actions-props">
+        <b>Referral Link: </b>
+        <a href="{{item.link}}" target="_blank">{{item.link}}</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
